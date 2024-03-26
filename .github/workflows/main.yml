@@ -1,30 +1,30 @@
-name: itvlist
+name: 
 
 on:
   schedule:
     - cron: '0 9,21 * * *'
   push:
     branches:
-      - main
+      - 
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: 
 
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
+      - name: 
+        uses: 
     
-      - name: Set up Python
-        uses: actions/setup-python@v2
+      - name: 
+        uses: 
         with:
-          python-version: 3.x
+          python-version: 
 
-      - name: Install dependencies
-        run: pip install selenium requests futures eventlet
+      - name: 
+        run: 
 
-      - name: Run itv_all
-        run: python ${{ github.workspace }}/itv_all.py
+      - name: 
+        run: {{}}
 
       #- name: Run cctv
         #run: python ${{ github.workspace }}/cctv.py
@@ -35,10 +35,10 @@ jobs:
       #- name: Run qita
         #run: python ${{ github.workspace }}/qita.py
         
-      - name: 提交更改
+      - name: 
         run: |
-          git config --local user.email "ssili@126.com"
-          git config --local user.name "ssili126"
+          git config --local user.email lichao.166@126.com"
+          git config --local user.name "ayin166"
           git add .
           git commit *.txt -m "Add generated file"
           git commit *.m3u -m "Add generated file"
